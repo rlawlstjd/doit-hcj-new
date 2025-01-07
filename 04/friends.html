@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>친한 친구 목록</title>
+  <style>
+    thead{
+      background-color: aqua;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,26 +23,65 @@
           <th>친구이름</th>
           <th>연락처</th>
           <th>주소</th>
+          <th>사진</th>
         </tr> 
       </thead>
       <!-- 데이터 -> tbody-->
       <tbody>
         <tr>
           <td>정상윤</td>
-          <td>000-0000-0000</td>
+          <td rowspan="3">000-0000-0000</td>
           <td>대구 달서구</td>
+          <td><img src="사진1.png" alt="아주머니" width="100" height="80"></td>
         </tr>
         <tr>
           <td>이병찬</td>
-          <td>000-0000-0000</td>
           <td>대구 중구</td>
+          <td><img src="사진2.png" alt="이병찬" width="100" height="80"></td>
         </tr>
           <td>김진성</td>
-          <td>000-0000-0000</td>
           <td>대구 북구</td>
+          <td><img src="사진3.png" alt="김진성" width="100" height="80"></td>
       </tbody>
     </table>
-    <a href="resume.html">내정보 이동</a>
+    <table border="2;">
+      <colgroup>
+      <col style="width: 100px; color: blueviolet;"> 
+      <col style="width: 100px;">
+      <col style="width: 100px;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th><b>종류</b></th>
+          <th><small>설명</small></th>
+          <th>용도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gif</td>
+          <td style="color: red; font-size: large">간단한 애니메이션을 지원함</td>
+          <td>간단한 애니메이션이나 아이콘</td>
+        </tr>
+        <tr>
+          <td>jpg</td>
+          <td>고해상도 사진을 작은 파일 크기로 압축 가능</td>
+          <td>사진이나 그래픽</td>
+        </tr>
+        <tr>
+          <td>PNG</td>
+          <td>투명 배경을 지원합니다.</td>
+          <td>화질 젖하 없이 투명 배경이 필요한 그래픽</td>
+        </tr>
+        <tr>
+          <td>WebP</td>
+          <td>gif와jpg,png의 장점을 하나로 결합한 이미지의 형태</td>
+          <td>고해상도의 이미지를 작은 파일 크기로제공</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="resume.html"> <img src="사진1.png" alt="아주머니" width="200px" height="300px"></a>
+    
   </main>
   <footer></footer>
 </body>

@@ -9,13 +9,61 @@
     }
     td, th {
       padding:10px 20px;
+      font-weight: bold;
     }
     td:last-child{
       width:200px;
     }
+    button {
+      width: 80px;
+      height: 25px;
+    }
+    /* black level , inline level ... input은?  */
+    input {
+      padding: 10px 10px;
+      background-color: aquamarine;
+    }
+    select {
+      padding: 5px;
+      
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>수습 국원 지원 양식</h1>
+  </header>
+  <main>
+    <table>
+      <tbody>
+        <tr>
+          <td rowspan="3">개인정보</td>
+          <td>이름</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>학과/학번</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>연락처</td>
+          <td><input type="test"></td>
+        </tr>
+        <tr>
+          <td>지원분야</td>
+          <td colspan="3">
+            <select>
+              <option>방송진행</option>
+              <option>프로듀서</option>
+            </select>
+          </td>
+        </tr>
+        <tr> <!--align="center" 중앙정렬-->
+          <td colspan="3" align="center"><button>지원동기</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
   
 </body>
 </html>

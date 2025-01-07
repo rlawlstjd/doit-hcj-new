@@ -5,10 +5,13 @@
     <title>상품 소개 페이지</title>
     <style>
       table, th, td {
-        border:1px solid #ccc;
+        border:1px solid #381e5a;
         border-collapse: collapse;
       }
-      th, td { padding:10px 20px; }
+      th, td { padding:10px 20px; color: rgb(41, 94, 39) }
+      h1 { color: red; }
+      h2 { color: plum; }
+      h3 { color: magenta; }
     </style>
   </head>
 <body>
@@ -31,15 +34,15 @@
   <!-- Do it! 표의 구조 만들기 -->
   <table>
     <caption>선물용과 가정용 상품 구성</caption>
-    <thead>
+    <thead> <!--thead -> tr -> th-->
       <tr>
         <th>용도</th>
         <th>중량</th>
         <th>갯수</th>
         <th>가격</th>
       </tr>
-    </thead>
-    <tbody>
+    </thead> 
+    <tbody> <!--tbody -> tr -> td-->
       <tr>
         <td>선물용</td>
         <td>3kg</td>
