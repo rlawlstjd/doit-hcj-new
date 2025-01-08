@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>상품 소개 페이지</title>
-  <link rel="stylesheet" href="css/mystyle-result.css">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      margin-left: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1>웹 기술 - 기본</h1>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Javascript 기초</li>
-  </ul>
+  <form>
+    <fieldset>
+      <legend>배송정보</legend>
+  <label>이름 <input type="text" required ></label>
+  <label>연락처 <input type="tel" autofocus placeholder="하이픈을 빼고 입력하세요." readonly></label>
+  <!-- input에다가 힌트 주기 .= placeholder.! -->
+   <input type="submit" value="주문하기"><p></p>
+   <label for="text">요청사항</label>
+   <textarea cols="40" rows="5" id="text"></textarea>
+  </fieldset>
+  </form>
 </body>
 </html>
