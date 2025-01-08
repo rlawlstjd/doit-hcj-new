@@ -1,0 +1,26 @@
+#container { /* 클래스 . 아이디 # */
+  width:520px;
+  border:1px solid black;
+  padding:20px 40px;
+  margin:0 auto;
+}
+fieldset { margin-bottom:15px; }
+legend { font-weight:bold; }
+ul {list-style-type: none;}
+li { line-height:30px;}
+
+label.space {
+  display: inline-block;
+  width: 10vh;
+  text-align: right;
+  margin-right: 10px;	
+}
+input.S {
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  width: 15vh;
+}
+.sector-container {
+  margin-left: 50px; /* 모든 라디오 버튼과 라벨을 오른쪽으로 밀기 */
+}

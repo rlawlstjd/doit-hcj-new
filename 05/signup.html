@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.container {
+      border: 1px solid #0f0e0e;
+      width: auto;
+      height: auto;
+      padding: 5px;
+      font-size: 15px;
+    }
+    img {
+      width: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 17vh;
+      text-align: right;
+      margin-right: 10px;
+    }
+    select {
+      width: 40vh;
+    }
+    input.tel {
+      /*width 60px*/
+    }
+    div.button {
+      display: flex;
+      justify-content: center;
+      padding: 10px;  
+      
+    }
+    input[type="radio"]{
+      
+    }
+    /*화면상의 첫번째 요소 */
+    hr:nth-of-type(1) {
+      border: 2px solid blue;      
+    }
+    hr:nth-last-of-type(1) {
+      border: 2px solid blue;
+    }
+    input.password{
+      background-color: bisque;
+    }
+    /*화면상의 뒤에서 첫번째 요소 */
+  </style>
+</head>
+<body>
+  <!--SignUp.html-->
+  <!-- div 공간을 만듦-->
+   <div class="container">
+    <h3 style="text-align: center;">일반회원 가입신청</h3>
+    <hr>
+    <label for="member_id"><img src="체크박스.png" alt="체크박스 이미지">일반회원아이디</label>
+    <input type="text" name="" id="member_id">
+    <button>중복아이디 검색</button>
+    <hr>
+    <label for="member_name"><img src="체크박스.png" alt="체크박스 이미지">일반회원이름</label>
+    <input type="text" name="" id="member_name">
+    <hr>
+    <label for="password"><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호</label>
+    <input class="password" type="password" id="password"><span style="color: rgb(222, 184, 135); font-style: italic;">(8~20자의 영문대소문자,숫자,특수문자만 가능합니다.)</span>
+    <hr>
+    <label for="checkpassword"><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호확인</label>
+    <input class="password" type="password" id="checkpassword">
+    <hr>
+    <label for="hint"><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호힌트</label>
+    <select name="" id="hint">
+      <option value="">---선택하세요---</option>
+      <option value="">어릴적 별명은?</option>
+      <option value="">좋아하는 노래는?</option>
+      <option value="">집 주소는?</option>
+    </select>
+    <hr>
+    <label for="passwordhint"><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호정답</label>
+    <input type="text" id="passwordhint">
+    <hr>
+    <label for="tel">전화번호</label>
+    <input class="password"class="tel" style="width: 60px;" type="tel" id="tel" width="30">-
+    <input class="tel" style="width: 60px;" type="tel" width="30">-
+    <input class="tel" style="width: 60px;" type="tel" width="30">
+    <hr>
+    <label for="phoneNumber">핸드폰번호</label>
+    <input type="tel" id="phoneNumber">
+    <hr>
+    <label for="userEmail"><img src="체크박스.PNG" alt="체크박스 이미지">이메일주소</label>
+    <input type="email" id="userEmail">
+    <hr>
+    <label class="info" for="whereinfo"><img src="체크박스.PNG" alt="체크박스 이미지">소속정보</label>
+    <input type="radio" id="whereinfo">일반기업
+    <input type="radio" id="whereinfo" >공공기업
+    <hr>
+    <label for="whereName"><img src="체크박스.PNG" alt="체크박스 이미지">소속명</label>
+    <input type="text" id="whereName">
+    <hr>
+    <label for="postNumber">우편번호</label>
+    <input type="text" id="postNumber"> <button>검색</button>
+    <hr>
+    <label for="adress">주소</label>
+    <input style="width: 300px;" type="text" id="adress">
+    <hr>
+    <label for="detailAdres">상세주소</label>
+    <input style="width: 300px;" type="text" id="detailAdress">
+    <hr>
+    <label for="register">인증서 DN</label>
+    <input type="text" id="register"> <button>인증서등록</button>
+    <span style="color: rgb(216, 164, 97); font-style: italic;">(공무원은 인증서 등록을 해 주시기 바랍니다.)</span>
+    <hr>
+    <label for="">자기소개</label>
+    <textarea name="" rows="5" cols="30" id=""></textarea>
+    <div class="button">
+      <input type="submit" value="가입신청">
+      <input type="reset" value="취소">
+    </div>
+  </div>
+</body>
+</html>

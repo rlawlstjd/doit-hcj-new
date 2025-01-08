@@ -3,18 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>연습문제 2</title>
-    <style>
-			#container { 
-				width:520px;
-				border:1px solid black;
-				padding:20px 40px;
-				margin:0 auto;
-			}
-      fieldset { margin-bottom:15px; }
-      legend { font-weight:bold; }
-			ul {list-style-type: none;}
-			li { line-height:30px;}
-    </style>
+    <link rel="stylesheet" href="css/test.css">
   </head>
   <body>
 		<div id="container">
@@ -22,7 +11,25 @@
 			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
 			<hr>
 			<form>
-				
+				<h3>개인 정보</h3>
+				<label class="space" for="name">이름</label>
+				<input type="text" id="name"><br>
+				<label class="space" for="contact">연락처</label>
+				<input type="text" id="contact">
+				<h3>지원분야</h3>
+				<label class="S" for="sector"></label>
+				<input type="radio" name="choice" class="sector" id="sector"> 웹 퍼블리싱 <br>
+				<label class="S" name="choice" for="sector"></label>
+				<input type="radio" name="choice" for="sector" > 웹 애플리케이션 개발 <br>
+				<label class="S" for="sector"></label>
+				<input type="radio" id="sector"> 개발 환경 개선		
+				<h3>지원동기</h3>
+				<label for="memo"></label>
+				<textarea id="memo" rows="8" cols="50"></textarea>		
+				<label for="submit"></label>
+				<input type="submit" id="submit" value="제출하기">
+				<label for="rewrite"></label>
+				<input type="reset" id="rewrite" value="다시쓰기">
 			</form>
 		</div>
   </body>
