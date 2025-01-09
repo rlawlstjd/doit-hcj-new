@@ -5,18 +5,26 @@
 	<title>박스모델</title>
 	<style>
     	
-		button {
+		.y1 {
 			font-size: 2em;
 			background: #fff;
       padding: 15px 30px;
 			margin:15px;				
       border: 1px solid #222;	
 			/* Do it! 박스 모델에 그림자 추가하기 */
-			
+			box-shadow: -10px 20px 10px #ccc inset;
 		}	
+		.k {
+			box-shadow: -10px 20px 10px green;
+			margin: 20px;
+			padding: 20px;
+			
+		}
+		
 	</style>
 </head>
 <body>
-	<button>Do it!</button>
+	<button class="y1">Do it!</button>
+	<button class="k">클릭하세요</button>
 </body>
 </html>
