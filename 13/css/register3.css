@@ -67,3 +67,12 @@ body {
 #signup input[readonly] {  /* 읽기 전용 필드의 스타일 */
 	border:none;
 }
+
+#signup fieldset:last-of-type {
+	border: none; 
+	margin-bottom: 0;
+}
+#signup input:not([type=radio]){
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}

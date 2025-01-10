@@ -17,7 +17,23 @@
 			color: blue;
 			text-decoration: none;
 		}
-
+		li a[title ^=en]{
+			border: 1px solid black;
+			border-radius: 25%;
+			background: url(images/us.png) no-repeat left center;
+		}
+		li a[title ^= ja]{
+			border: 1px solid black; 
+			border-radius: 50%;
+			background-image: url(images/jp.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		li a[title $= se]{
+			border: 1px solid black;
+			border-radius: 50%;
+			background: url(images/ch.png) no-repeat left;
+		}
 		/* Do it! 속성 값의 시작 부분이 일치하는 요소에 스타일 지정하기 */
 
 </style>

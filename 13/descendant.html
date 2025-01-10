@@ -18,9 +18,16 @@
       border:1px solid #ccc;
       line-height:2;
     }
-
+    div+p {
+      color: green;
+    }
+    h1~p {
+      font-size: 30px;
+    }
+    /* div와 인접한 p를 선택 */
     /* Do it! section 요소의 모든 하위 p 요소의 스타일 바꾸기 */
-
+    /* scection p : section 하위 모든 p선택*/
+    /* section >p : section 자식요소p선택*/
   </style>
 </head>
 <body>
@@ -28,8 +35,12 @@
     <h1>예약 방법 & 사용 요금</h1>
     <p>아직 온라인 예약 신청이 준비되어 있지 않습니다. <br>전화(xxx-xxxx-xxxx)로 문의 바랍니다.</p>
     <div>
+      <p>sdfasdf</p>
+    </div>
       <p>가족실(2~4인) : 60,000원/일</p>
       <p>도미토리(4인 공용) : 25,000원/일</p>
+     
   </section>   
+  <p>도미토리(4인 공용) : 25,000원/일</p>
 </body>
 </html>

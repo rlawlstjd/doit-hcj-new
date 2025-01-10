@@ -13,11 +13,20 @@
       padding-left:50px;  /* 왼쪽 패딩 (박스 모델) */
       line-height:40px;  /* 줄간격 */
       /* Do it! 목록 불릿 대신 배경 이미지 사용하기  */
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-image: url(다운로드.jpg);
+      background-attachment: scroll;
     }
+   body {
+    background: url(다운로드.jpg)  no-repeat fixed;
+    background-size: cover;
+   }
   </style>
 </head>
 <body>
   <h1>이지스퍼블리싱</h1>
+  
   <ul>
     <li>회사소개</li>
     <li>도서</li>

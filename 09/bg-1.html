@@ -5,10 +5,30 @@
   <title>배경 이미지</title>
   <style>
     /* Do it! images/bg1.jpg를 문서 배경 이미지로 사용하기 */
-
+    body {
+      background-color: green;
+    }
+    div {
+      width: 60vh;
+      height: 100px;
+      margin-top: 10px;
+      border: 5px dotted black;
+    }
+    .bg1 {
+      background-color: antiquewhite;
+      background-clip: padding-box;
+      padding: 20px;
+      border-radius: 30px;
+    }
+    .bg2 {
+      background-color: aqua;
+      background-clip: content-box;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
-  
+  <div class="bg1">레드향</div>
+  <div class="bg2">레드향</div>
 </body>
 </html>

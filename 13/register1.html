@@ -5,9 +5,17 @@
   <title>회원 가입</title>
   <link rel="stylesheet" href="css/register.css">
 </head>
+<style>
+  fieldset.loginfo ul {
+    list-style-type: square;
+  }
+  fieldset.person_info ul {
+    list-style-type: circle;
+  }
+</style>
 <body>
   <form id="signup">
-    <fieldset>
+    <fieldset class="loginfo">
       <legend>로그인 정보</legend>
       <ul>
         <li>
@@ -28,7 +36,7 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset>
+    <fieldset class="person_info">
       <legend>개인 정보</legend>
       <ul>
         <li>
