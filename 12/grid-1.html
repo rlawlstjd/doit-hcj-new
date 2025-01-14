@@ -16,14 +16,30 @@
       .items:nth-child(even){
         background-color:#ffc400;
       }
+      .container {
+        display: grid;
+        grid-template-columns: 100px 200px 300px;
+        grid-template-rows: 100px;
+      }
+      .items{
+        border: 1px solid black;
+        padding:  10px ;
+        font-size: 20px;
+        text-align: center;
+      }
+      .item:nth-child(even){
+
+      }
     </style>
   </head>
   <body>
+    <div class="container">
     <div class="items">1</div>
     <div class="items">2</div>
     <div class="items">3</div>
     <div class="items">4</div>
     <div class="items">5</div>
     <div class="items">6</div>
+    </div>
   </body>
   </html>
